@@ -1,3 +1,4 @@
+// задание со звездочкой
 let userName = document.querySelector('.input-name');
 let userEmail = document.querySelector('.input-email');
 let userTel = document.querySelector('.input-tel');
@@ -14,8 +15,6 @@ function isValidTel (tel){
     var pattern = new RegExp(/^[1-9]+$/gi);
     return pattern.test(tel)
 }
-
-
 document.querySelector('.input-submit').addEventListener("click", function(){
     event.preventDefault()
     document.querySelectorAll('.error').forEach(element => element.remove())
