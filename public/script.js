@@ -42,3 +42,18 @@ document.querySelector('.input-submit').addEventListener("click", function(){
         userEmail.classList.add('border-red')
     }
 })
+
+// =======================================================================
+// первое задание
+var textFromHtml = document.querySelector('.text').textContent
+
+console.log(
+    textFromHtml
+)
+// заменяем одинарные ковычки на двойные
+var textFromHtml2 =textFromHtml.replace(/'/gi,'\"');
+console.log(` первое решение ${textFromHtml2}`)
+
+// заменяем одинарные кавыски на 2е за исключением тех, что используются для сокращений
+var textFromHtml3 =textFromHtml.replace(/\B'\B|\B'|'\B/g,'\"');
+console.log(` второе решение ${textFromHtml3} `)
