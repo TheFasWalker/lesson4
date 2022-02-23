@@ -35,3 +35,6 @@
     background-color: blue;
     color: beige;
 }
+.border-red{
+    border: 1px solid red;
+}
